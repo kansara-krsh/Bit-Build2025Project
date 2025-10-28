@@ -1,0 +1,188 @@
+/* React Flow Custom Styles for BrandMind AI */
+
+/* Canvas Background */
+.react-flow {
+  background-color: #1e293b;
+}
+
+/* Node Selection */
+.react-flow__node.selected {
+  box-shadow: 0 0 0 3px #5B9DFE;
+}
+
+/* Edge Styles */
+.react-flow__edge-path {
+  stroke: #5B9DFE;
+  stroke-width: 2;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #3b82f6;
+  stroke-width: 3;
+}
+
+/* Controls */
+.react-flow__controls {
+  background-color: #334155;
+  border: 1px solid #475569;
+  border-radius: 8px;
+}
+
+.react-flow__controls-button {
+  background-color: #475569;
+  border-bottom: 1px solid #64748b;
+  color: #e2e8f0;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #5B9DFE;
+}
+
+.react-flow__controls-button svg {
+  fill: currentColor;
+}
+
+/* MiniMap */
+.react-flow__minimap {
+  background-color: #334155;
+  border: 1px solid #475569;
+  border-radius: 8px;
+}
+
+/* Handle Styles */
+.react-flow__handle {
+  width: 12px;
+  height: 12px;
+  background-color: #64748b;
+  border: 2px solid white;
+  transition: all 0.2s;
+}
+
+.react-flow__handle:hover {
+  background-color: #5B9DFE;
+  transform: scale(1.2);
+}
+
+.react-flow__handle-connecting {
+  background-color: #5B9DFE;
+}
+
+/* Connection Line */
+.react-flow__connectionline {
+  stroke: #5B9DFE;
+  stroke-width: 2;
+}
+
+/* Attribution (optional - hide if you want) */
+.react-flow__attribution {
+  background: rgba(30, 41, 59, 0.8);
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+/* Custom Node Animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(91, 157, 254, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(91, 157, 254, 0.7);
+  }
+}
+
+.node-running {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Scrollbar Styles */
+.react-flow__node::-webkit-scrollbar,
+.react-flow__minimap::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.react-flow__node::-webkit-scrollbar-track,
+.react-flow__minimap::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+.react-flow__node::-webkit-scrollbar-thumb,
+.react-flow__minimap::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
+
+.react-flow__node::-webkit-scrollbar-thumb:hover,
+.react-flow__minimap::-webkit-scrollbar-thumb:hover {
+  background: #5B9DFE;
+}
+
+/* Prose/Markdown Styling for Output */
+.prose {
+  line-height: 1.5;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  color: #1f2937;
+}
+
+.prose h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #374151;
+}
+
+.prose em {
+  font-style: italic;
+  color: #6b7280;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0.25rem 0;
+  padding-left: 1rem;
+}
+
+.prose li {
+  margin: 0.125rem 0;
+}
+
+.prose p {
+  margin: 0.5rem 0;
+}
+
+.prose br {
+  display: block;
+  content: "";
+  margin: 0.25rem 0;
+}
+
+/* Custom scrollbar for output areas */
+.prose::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.prose::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+
+.prose::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 4px;
+}
+
+.prose::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
